@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header" >
@@ -27,7 +28,7 @@
         </ul>
       </nav>
       <section class="main-header__promo promo">
-        <h1 class="promo__title title">Функциональное питание для котов</h1>
+        <h1 class="promo__title title title--main">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__image" src="" width="280" height="270" alt="Корм Cat Energy Pro">
         <button class="promo__button button">Подобрать программу</button>
@@ -76,11 +77,11 @@
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <dl class="live-example__statistics statistics">
-          <div class="statistics-container">
+          <div class="statistics__container">
             <dt class="statistics__term">5 кг</dt>
             <dd class="statistics__description">снижение веса</dd>
           </div>
-          <div class="statistics-container">
+          <div class="statistics__container">
             <dt class="statistics__term">60 дней</dt>
             <dd class="statistics__description">затрачено времени</dd>
           </div>
@@ -117,28 +118,34 @@
         <h3 class="visually-hidden">Мы в социальных сетях.</h3>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
+            <article class="social-box">
+              <a class="social-box__link social-box__link--vkontakte" href="https://vk.com/htmlacademy">
+                <h4 class="visually-hidden">Мы в Вконтакте.</h4>
+              </a>
+            </article>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Мы в Ютубе</span>
-            </a>
+            <article class="social-box">
+              <a class="social-box__link social-box__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <h4 class="visually-hidden">Мы в Ютубе.</h4>
+              </a>
+            </article>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Мы в Телеграме</span>
-            </a>
+            <article class="social-box">
+              <a class="social-box__link social-box__link--telegram" href="https://t.me/htmlacademy">
+                <h4 class="visually-hidden">Мы в Телеграме.</h4>
+              </a>
+            </article>
           </li>
         </ul>
       </section>
-      <div class="developers">
+      <div class="developer">
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developers__text">HTML Academy</span>
+          <span class="developer__text">HTML Academy</span>
         </a>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="developers__logo"></svg>
+          <svg class="developer__logo"></svg>
         </a>
       </div>
     </footer>
