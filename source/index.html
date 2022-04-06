@@ -6,46 +6,52 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header" >
-      <a class="logo">
-        <img src="" width="33" height="37" alt="Логотип сайта Cat Energy.">
-        <img src="" width="101" height="18" alt="Cat Energy.">
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть навигацию сайта.</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a>Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="main-header__container">
+        <a class="logo">
+          <img src="" width="33" height="37" alt="Логотип сайта Cat Energy.">
+          <img src="" width="101" height="18" alt="Cat Energy.">
+        </a>
+        <nav class="navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть навигацию сайта.</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="main-header__promo promo">
-        <h1 class="promo__title title title--main">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="" width="280" height="270" alt="Корм Cat Energy Pro">
-        <button class="promo__button button">Подобрать программу</button>
+        <div class="promo__container">
+          <h1 class="promo__title title title--main">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <img class="promo__image" src="" width="280" height="270" alt="Корм Cat Energy Pro">
+        </div>
+        <div class="promo__container-button">
+          <button class="promo__button button button--primary">Подобрать программу</button>
+        </div>
       </section>
     </header>
     <main class="page-main">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Cat Energy</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--cat-slim">
             <h3 class="advantages__title">Похудение</h3>
             <p class="advantages__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="advantages__link" href="catalog.html">Каталог slim</a>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--cat-pro">
             <h3 class="advantages__title">Набор массы</h3>
             <p class="advantages__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -140,7 +146,7 @@
           </li>
         </ul>
       </section>
-      <div class="developer">
+      <div class="main-footer_developer developer">
         <a href="https://htmlacademy.ru/intensive/adaptive">
           <span class="developer__text">HTML Academy</span>
         </a>
