@@ -70,18 +70,22 @@
           </fieldset>
           <fieldset class="form__field-contacts field-contacts">
             <legend class="field-contacts__title title-line">Контактные данные (владельца кота)</legend>
-            <label class="field-contacts__label input-field">
-              <span class="input-field__parameter">E-mail:*</span>
-              <input class="field-contacts__input input input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="field-contacts__label input-field">
-              <span class="input-field__parameter">Телефон:*</span>
-              <input class="field-contacts__input input input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-            </label>
+            <div class="field-contacts__container">
+              <label class="field-contacts__label input-field">
+                <span class="input-field__parameter">E-mail:*</span>
+                <input class="field-contacts__input input input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="field-contacts__label input-field">
+                <span class="input-field__parameter">Телефон:*</span>
+                <input class="field-contacts__input input input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form__comment comment">
             <legend class="comment__title title-line">Комментарий</legend>
-            <textarea class="comment__textarea" name="comment" id="comment" cols="32" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="comment__container">
+              <textarea class="comment__textarea" name="comment" id="comment" cols="32" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
           <fieldset class="form__additionally additionally">
             <legend class="additionally__title title-line">Дополнительно</legend>
@@ -108,8 +112,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <span class="form__hint">* — Обязательные поля</span>
+          <div class="form__button-container">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <span class="form__hint">* — Обязательные поля</span>
+          </div>
         </form>
       </section>
       <section class="contacts">
