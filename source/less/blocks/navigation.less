@@ -2,10 +2,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  // &--closed {
+  //   display: none;
+  // }
 }
 
 .navigation__item {
+  padding: 22px 0 24px;
   text-align: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .navigation__link {
@@ -14,4 +23,42 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.navigation__toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
 }
