@@ -1,13 +1,36 @@
 .main-header__container {
   position: relative;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+  }
 }
 
 .main-header__logo-block {
   display: flex;
+  align-items: center;
   padding: 10px 44px 17px 20px;
-  border-bottom: 1px solid #e6e6e6;
+
+  & a:last-child {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    padding: 0;
+    box-sizing: content-box;
+
+    & a:last-child {
+      margin: 0;
+      margin-left: auto;
+    }
+  }
 }
 
-.main-header__logo-block a:last-child {
-  margin: auto;
+.main-header__promo {
+  position: relative;
 }

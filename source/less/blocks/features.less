@@ -1,5 +1,10 @@
 .features {
   padding: 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .features__title {
@@ -10,6 +15,13 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 153px;
+  }
 }
 
 .features__item {
