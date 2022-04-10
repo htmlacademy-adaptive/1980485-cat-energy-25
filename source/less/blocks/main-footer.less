@@ -2,14 +2,37 @@
   padding: 39px 20px 22px;
   background-color: #f2f2f2;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 30px 55px;
+  }
+}
+
+.main-footer__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 708px;
+    margin: 0 auto;
+  }
 }
 
 .main-footer__logo {
   display: block;
   padding-bottom: 32px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 0;
+    padding: 0;
+  }
 }
 
 .main-footer__developer {
   margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

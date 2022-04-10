@@ -6,7 +6,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
     padding: 24px 30px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    padding: 53px 110px;
   }
 }
 
@@ -21,6 +29,7 @@
 
   @media (min-width: @tablet-width) {
     width: 175px;
+    margin-right: 94px;
     padding: 0;
     box-sizing: content-box;
 
@@ -29,8 +38,25 @@
       margin-left: auto;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+  }
 }
 
 .main-header__promo {
   position: relative;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    padding: 0 30px;
+    text-align: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
+  }
 }

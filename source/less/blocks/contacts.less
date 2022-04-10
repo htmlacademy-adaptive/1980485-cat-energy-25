@@ -8,6 +8,10 @@
   display: flex;
   margin: 0;
   padding: 26px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 56px 70px;
+  }
 }
 
 .contacts__text {
@@ -17,6 +21,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    width: 172px;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
@@ -25,4 +36,10 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

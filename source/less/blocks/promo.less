@@ -1,12 +1,4 @@
-.promo {
-  text-align: center;
-
-  @media (min-width: @tablet-width) {
-    text-align: left;
-  }
-}
-
-.promo__container {
+.promo__container-text {
   padding: 27px 35px;
   min-height: 302px;
   background: linear-gradient(fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/main-promo-background.jpg");
@@ -15,7 +7,14 @@
   background-size: cover;
 
   @media (min-width: @tablet-width) {
+    width: 600px;
+    min-height: auto;
+    padding: 0 0 0 87px;
     background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 0 80px;
   }
 }
 
@@ -28,7 +27,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 41px 0 20px;
-    padding-left: 90px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
@@ -40,29 +38,22 @@
   bottom: 40px;
   left: 0;
   right: 0;
+  z-index: -1;
   width: 280px;
   height: 270px;
   margin: auto;
-
-  @media (min-width: @tablet-width) {
-    position: static;
-    margin: auto;
-  }
 }
 
 .promo__container-button {
   padding: 138px 20px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding: 0 0 0 80px;
   }
 }
 
 .promo__button {
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 240px;
-    left: 124px;
     width: 244px;
   }
 }

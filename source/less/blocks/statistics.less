@@ -1,20 +1,35 @@
 .statistics__container {
-  width: 40%;
+  width: 124px;
   height: 56px;
   border: 1px solid #cdcdcd;
   text-align: center;
+
+  &:first-child {
+    margin-right: 42px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .statistics__term {
-  padding: 15px 10px;
+  padding: 14px 10px 17px;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 12px 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .statistics__description {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 15px;
@@ -23,4 +38,10 @@
   font-size: 12px;
   line-height: 12px;
   background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }

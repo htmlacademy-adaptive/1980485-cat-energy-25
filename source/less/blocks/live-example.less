@@ -1,6 +1,8 @@
-.live-example {
-  padding: 25px 20px 40px;
-  background-color: #eaeaea;
+.live-example__container {
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .live-example__title {
@@ -12,11 +14,28 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.live-example__wrapper {
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    margin-bottom: 80px;
+  }
 }
 
 .live-example__statistics {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
@@ -27,5 +46,19 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+.live-example__comparison-slider {
+  margin: 0 auto;
+  padding: 0 58px 0;
+  text-align: center;
 }
 
