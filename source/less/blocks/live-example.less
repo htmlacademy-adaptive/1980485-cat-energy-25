@@ -1,12 +1,31 @@
 .live-example__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    min-height: 566px;
+    margin: 0 auto;
+  }
+}
+
+.live-example__block-data {
   @media (min-width: @tablet-width) {
     max-width: 768px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 436px;
+    margin: 0;
   }
 }
 
 .live-example__title {
   margin-bottom: 40px;
+
+  @media (min-width: @desktop-width) {
+    margin: 43px 0 146px;
+  }
 }
 
 .live-example__description {
@@ -18,6 +37,10 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
   }
 }
 
@@ -31,12 +54,26 @@
     width: 708px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    width: 436px;
+    margin-bottom: 0;
+  }
 }
 
 .live-example__statistics {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 55px;
+  }
 }
 
 .live-example__costs {
@@ -49,16 +86,26 @@
 
   @media (min-width: @tablet-width) {
     width: 174px;
-    margin-top: 30px;
+    margin: 20px 0 0;
     font-size: 20px;
     line-height: 20px;
     text-align: end;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 436px;
+    margin: 0;
+  }
+}
+
+.live-example__costs-food {
+  @media (min-width: @desktop-width) {
+    margin-right: 63px;
+  }
 }
 
 .live-example__comparison-slider {
-  margin: 0 auto;
-  padding: 0 58px 0;
   text-align: center;
 }
 

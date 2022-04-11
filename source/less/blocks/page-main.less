@@ -40,11 +40,16 @@
     padding: 0 30px 56px;
     background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 641px;
+    padding: 0 110px 65px;
+  }
 }
 
 .page-main__contacts {
-  @media (min-width: @tablet-width) {
-    max-width: 768px;
-    margin: 0 auto;
+  @media (min-width: @desktop-width) {
+    position: relative;
+    min-height: 400px;
   }
 }

@@ -1,16 +1,21 @@
-.contacts {
-  &--background {
-    background-color: #f2f2f2;
-  }
-}
-
 .contacts__description {
   display: flex;
   margin: 0;
   padding: 26px 20px;
 
   @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
     padding: 56px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    padding: 56px 80px;
+    background-color: #ffffff;
   }
 }
 
