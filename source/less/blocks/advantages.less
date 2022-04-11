@@ -1,15 +1,68 @@
 .advantages__list {
   list-style-type: none;
   margin: 0;
-  padding: 0 20px 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item {
   padding: 30px 20px 18px;
   background-color: #f2f2f2;
 
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--cat-slim {
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 21px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 80% 50%;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 52px 41px;
+    }
+  }
+
+  &--cat-pro {
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 80% 50%;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 33px 47px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 316px 18px 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 41px 52px 55px;
   }
 }
 
@@ -22,6 +75,16 @@
   font-weight: inherit;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 162px;
+  }
 }
 
 .advantages__description {
@@ -30,6 +93,12 @@
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 0;
+  }
 }
 
 .advantages__link {
@@ -39,4 +108,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
