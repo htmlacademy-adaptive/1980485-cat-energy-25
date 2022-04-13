@@ -1,9 +1,16 @@
 .title-line {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
+  font-weight: inherit;
   color: #000000;
 
   &--secondary {
     line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 }

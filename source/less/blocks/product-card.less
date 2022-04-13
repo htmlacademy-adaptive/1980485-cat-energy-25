@@ -13,13 +13,16 @@
 .product-card__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: inherit;
   text-transform: uppercase;
   color: #222222;
-}
 
-.product-card__description-list {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+  }
 }
