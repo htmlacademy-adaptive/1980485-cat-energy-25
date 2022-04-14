@@ -7,6 +7,10 @@
     padding: 66px 67px 72px 71px;
     border: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .field-text__label {
@@ -15,6 +19,10 @@
 
   &:not(:last-child) {
     margin-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 

@@ -1,5 +1,17 @@
+.form__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin: 0 0 69px;
+  }
+}
+
 .form__field-text {
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    margin-right: 80px;
+  }
 }
 
 .form__field-radio {
@@ -7,6 +19,11 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    margin: 0;
   }
 }
 
@@ -16,6 +33,11 @@
   @media (min-width: @tablet-width) {
     margin: 0 0 65px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__comment {
@@ -23,6 +45,10 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 67px;
   }
 }
 
@@ -36,7 +62,12 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: center;
     padding: 0 70px 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 82px;
   }
 }
 
