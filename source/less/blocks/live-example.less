@@ -1,3 +1,19 @@
+.live-example {
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    min-height: 1048px;
+    padding: 43px 30px 56px;
+    background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 641px;
+    padding: 43px 110px 65px;
+  }
+}
+
 .live-example__container {
   @media (min-width: @desktop-width) {
     display: flex;
@@ -9,11 +25,6 @@
 }
 
 .live-example__block-data {
-  @media (min-width: @tablet-width) {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-
   @media (min-width: @desktop-width) {
     max-width: 436px;
     margin: 0;
@@ -45,13 +56,9 @@
 }
 
 .live-example__wrapper {
-  width: 300px;
-  margin: 0 auto;
-
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 708px;
     margin-bottom: 80px;
   }
 
@@ -65,13 +72,15 @@
 .live-example__statistics {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 20px;
+  margin: 0 0 34px;
 
   @media (min-width: @tablet-width) {
+    width: 52%;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
+    width: 366px;
     margin: 0 0 55px;
   }
 }
@@ -85,7 +94,7 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    width: 174px;
+    width: 25%;
     margin: 20px 0 0;
     font-size: 20px;
     line-height: 20px;
@@ -100,9 +109,15 @@
 }
 
 .live-example__costs-food {
+  display: inline-block;
+
   @media (min-width: @desktop-width) {
     margin-right: 63px;
   }
+}
+
+.live-example__costs-value {
+  display: inline-block;
 }
 
 .live-example__comparison-slider {

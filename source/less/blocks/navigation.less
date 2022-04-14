@@ -9,30 +9,30 @@
 
   &--closed {
     display: none;
+  }
 
-    @media (min-width: @tablet-width) {
-      position: static;
-      display: flex;
-      max-width: 640px;
-    }
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: flex;
+    max-width: 640px;
   }
 }
 
 .navigation__item {
-  padding: 22px 0 24px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     border: 0;
-  }
 
-  &:not(:last-child) {
-    margin-right: 34px;
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 }
 
 .navigation__link {
+  padding: 12px 0;
   line-height: 20px;
   font-weight: 500;
   color: #000000;

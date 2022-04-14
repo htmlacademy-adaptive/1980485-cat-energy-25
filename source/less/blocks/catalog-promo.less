@@ -1,5 +1,14 @@
 .catalog-promo {
-  padding: 0 20px 0;
+  padding: 35px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 69px 0 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    padding: 0;
+  }
 }
 
 .catalog-promo__container {
@@ -10,6 +19,17 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 42px 42px;
+    text-align: center;
+  }
 }
 
 .catalog-promo__description {

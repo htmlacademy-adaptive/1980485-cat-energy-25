@@ -1,15 +1,42 @@
 .program-selection {
-  padding-top: 27px;
+  padding: 27px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 38px 110px 0;
+  }
 }
 
 .program-selection__title {
   margin: 0 0 37px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 54px 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 56px 0;
+  }
 }
 
 .program-selection__description {
-  margin: 0 0 39px 20px;
+  margin: 0 0 0 20px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    margin: 0 0 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 66px;
+  }
 }
