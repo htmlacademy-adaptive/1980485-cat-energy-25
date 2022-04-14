@@ -1,17 +1,21 @@
 .field-contacts {
-  padding: 26px 0 0;
+  padding: 0 20px 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 65px 0 71px;
+  }
 }
 
 .field-contacts__title {
   width: 221px;
   margin-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 14px;
-}
+  padding: 0;
 
-.field-contacts__container {
-  padding: 0 20px;
+  @media (min-width: @tablet-width) {
+    width: max-content;
+    margin-bottom: 76px;
+  }
 }
 
 .field-contacts__label {
@@ -20,6 +24,10 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 
