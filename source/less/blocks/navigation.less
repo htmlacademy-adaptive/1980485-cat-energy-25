@@ -1,5 +1,7 @@
 .navigation__list {
   position: absolute;
+  top: 58px;
+  left: 0;
   z-index: 2;
   width: 100%;
   margin: 0;
@@ -11,6 +13,7 @@
     position: static;
     display: flex;
     max-width: 640px;
+    background-color: transparent;
   }
 }
 
@@ -23,6 +26,16 @@
 
     &:not(:last-child) {
       margin-right: 34px;
+    }
+
+    &--current {
+      border-bottom: 2px solid @base-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--current {
+      border-bottom: 2px solid #ffffff;
     }
   }
 }
@@ -37,6 +50,7 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
+    padding: 15px 0 10px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -45,7 +59,7 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    // color: #ffffff;
+    color: #ffffff;
   }
 }
 
