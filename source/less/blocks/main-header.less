@@ -1,45 +1,30 @@
 .main-header__container {
   position: relative;
+  padding: 10px 52px 16px 20px;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 30px;
+    padding: 27px 30px 61px;
     border: 0;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 53px 110px;
+    padding: 53px 40px 111px;
   }
 }
 
 .main-header__logo-block {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 44px 17px 20px;
 
   & a:last-child {
     margin: 0 auto;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 175px;
-    margin-right: 94px;
-    padding: 0;
-    box-sizing: content-box;
-
-    & a:last-child {
-      margin: 0;
-      margin-left: auto;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 202px;
   }
 }
 

@@ -9,6 +9,14 @@
 }
 
 .page__header {
+  @media (min-width: @desktop-width) {
+    min-height: 693px;
+    background-image: linear-gradient(to right, #ffffff 50%, fade(@base-color, 85%) 50%), url("../img/main-promo-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto;
+  }
+
   &--index {
     @media (max-width: @mobile-width-only) {
       padding-bottom: 20px;

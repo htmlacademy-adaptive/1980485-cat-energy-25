@@ -1,5 +1,7 @@
 .navigation__list {
   position: absolute;
+  top: 58px;
+  left: 0;
   z-index: 2;
   width: 100%;
   margin: 0;
@@ -7,14 +9,11 @@
   list-style-type: none;
   background-color: #ffffff;
 
-  &--closed {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     position: static;
     display: flex;
     max-width: 640px;
+    background-color: transparent;
   }
 }
 
@@ -28,11 +27,22 @@
     &:not(:last-child) {
       margin-right: 34px;
     }
+
+    &--current {
+      border-bottom: 2px solid @base-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--current {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }
 
 .navigation__link {
-  padding: 12px 0;
+  display: block;
+  padding: 22px 0 24px;
   line-height: 20px;
   font-weight: 500;
   color: #000000;
@@ -40,6 +50,7 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
+    padding: 15px 0 10px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -48,13 +59,13 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    // color: #ffffff;
+    color: #ffffff;
   }
 }
 
 .navigation__toggle {
   position: absolute;
-  top: 24px;
+  top: 22px;
   right: 20px;
   width: 24px;
   height: 18px;
@@ -67,7 +78,7 @@
   }
 }
 
-.navigation__toggle-bar {
+.navigation--closed .navigation__toggle-bar {
   display: block;
   width: 24px;
   height: 2px;
@@ -92,4 +103,39 @@
     height: 2px;
     background-color: #000000;
   }
+}
+
+.navigation--opened .navigation__toggle-bar {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__list {
+  display: block;
 }
