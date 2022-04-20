@@ -1,23 +1,18 @@
 .show-more {
-  padding: 0 20px 25px;
-  border-bottom: 1px solid #ebebeb;
-
   @media (min-width: @tablet-width) {
     width: 324px;
-    min-height: 430px;
-    padding: 0 37px 38px;
-    border: 2px solid #f2f2f2;
+    padding-top: 83px;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    padding: 0 37px 39px;
   }
 }
 
 .show-more__container {
-  padding-top: 25px;
+  padding: 25px 20px;
   text-align: center;
+  border-bottom: 1px solid #ebebeb;
 
   @media (max-width: @mobile-width-only) {
     & br {
@@ -26,7 +21,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 49px;
+    padding: 49px 37px 38px;
+    border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 49px 37px 39px;
   }
 }
 
