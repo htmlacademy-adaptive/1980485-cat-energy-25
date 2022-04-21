@@ -4,7 +4,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    padding: 0 69px 0 71px;
+    padding: 0 39px 0 41px;
     border-bottom: 0;
   }
 
@@ -29,6 +29,8 @@
 }
 
 .field-radio__label {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -42,4 +44,15 @@
 
 .field-radio__mark {
   margin-right: 15px;
+}
+
+.field-radio__input:checked + .field-radio__mark::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: @base-color;
+  border-radius: 50%;
 }

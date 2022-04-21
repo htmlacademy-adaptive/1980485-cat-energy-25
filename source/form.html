@@ -65,19 +65,25 @@
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="field-radio__list">
                 <li class="field-radio__item">
-                  <input class="field-radio__input visually-hidden" type="radio" id="slim" name="radio" checked>
-                  <span class="field-radio__mark mark"></span>
-                  <label class="field-radio__label" for="slim">Похудение</label>
+                  <label class="field-radio__label">
+                    <input class="field-radio__input visually-hidden" type="radio" id="slim" name="radio" value="slim" checked>
+                    <span class="field-radio__mark mark mark--radio"></span>
+                    Похудение
+                  </label>
                 </li>
                 <li class="field-radio__item">
-                  <input class="field-radio__input visually-hidden" type="radio" id="weight-gain" name="radio">
-                  <span class="field-radio__mark mark"></span>
-                  <label class="field-radio__label" for="weight-gain" >Набор массы</label>
+                  <label class="field-radio__label">
+                    <input class="field-radio__input visually-hidden" type="radio" id="weight-gain" name="radio" value="weight-gain">
+                    <span class="field-radio__mark mark mark--radio"></span>
+                    Набор массы
+                  </label>
                 </li>
                 <li class="field-radio__item">
-                  <input class="field-radio__input visually-hidden" type="radio" id="advice" name="radio">
-                  <span class="field-radio__mark mark"></span>
-                  <label class="field-radio__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                  <label class="field-radio__label">
+                    <input class="field-radio__input visually-hidden" type="radio" id="advice" name="radio" value="advice">
+                    <span class="field-radio__mark mark mark--radio"></span>
+                    Не знаю (Нужен ваш совет)
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -95,30 +101,40 @@
           </fieldset>
           <fieldset class="form__comment comment">
             <legend class="comment__title title-line">Комментарий</legend>
-            <textarea class="comment__textarea" name="comment" id="comment" cols="32" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="comment___container">
+              <textarea class="comment__textarea" name="comment" id="comment" cols="32" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
           <fieldset class="form__additionally additionally">
             <legend class="additionally__title title-line">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
-                <input class="additionally__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
-                <span class="additionally__mark mark mark--checkbox"></span>
-                <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+                <label class="additionally__label">
+                  <input class="additionally__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+                  <span class="additionally__mark mark mark--checkbox"></span>
+                  Сахарозаменитель
+                </label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__input visually-hidden" type="checkbox" id="water" name="water">
-                <span class="additionally__mark mark mark--checkbox"></span>
-                <label class="additionally__label" for="water">Питьевая вода</label>
+                <label class="additionally__label">
+                  <input class="additionally__input visually-hidden" type="checkbox" id="water" name="water">
+                  <span class="additionally__mark mark mark--checkbox"></span>
+                  Питьевая вода
+                </label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__input visually-hidden" type="checkbox" id="milk" name="milk">
-                <span class="additionally__mark mark mark--checkbox"></span>
-                <label class="additionally__label" for="milk">Молоко</label>
+                <label class="additionally__label">
+                  <input class="additionally__input visually-hidden" type="checkbox" id="milk" name="milk">
+                  <span class="additionally__mark mark mark--checkbox"></span>
+                  Молоко
+                </label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-                <span class="additionally__mark mark mark--checkbox"></span>
-                <label class="additionally__label" for="vitamins">Витамины</label>
+                <label class="additionally__label">
+                  <input class="additionally__input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+                  <span class="additionally__mark mark mark--checkbox"></span>
+                  Витамины
+                </label>
               </li>
             </ul>
           </fieldset>
