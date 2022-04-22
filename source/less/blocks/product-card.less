@@ -1,21 +1,76 @@
 .product-card {
-  padding: 11px 20px 14px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 37px 39px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px 40px 35px;
+  }
 }
 
 .product-card__wrapper {
+  display: grid;
+  grid-template-columns: 140px 35% 1fr;
   margin-bottom: 13px;
+  padding: 11px 0 14px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 33px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.product-card__link-image {
+  display: block;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1/3;
+  margin-bottom: 34px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.product-card__image {
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
 }
 
 .product-card__link {
+  display: block;
+  margin-bottom: 18px;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .product-card__title {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: inherit;
   text-transform: uppercase;
   color: #222222;
+
+  @media (max-width: @mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -25,4 +80,43 @@
   @media (min-width: @desktop-width) {
     line-height: 21px;
   }
+}
+
+.product-card__description-list {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/4;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.product-card__description-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.product-card__parameter {
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
+}
+
+.product-card__value {
+  margin: 0;
+  text-align: end;
 }

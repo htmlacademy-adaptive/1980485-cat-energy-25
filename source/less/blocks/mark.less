@@ -1,1 +1,26 @@
-// mark
+.mark {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  outline: 1px solid #cdcdcd;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      display: none;
+      width: 18px;
+      height: 14px;
+      background-image: url("../img/tick-checkbox.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

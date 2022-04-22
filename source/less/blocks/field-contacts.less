@@ -1,28 +1,37 @@
-.field-contacts {
+.field-contacts__container {
   padding: 0 20px 0;
-  border: none;
 
   @media (min-width: @tablet-width) {
-    padding: 0 65px 0 71px;
+    padding: 0 65px 0 69px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 
 .field-contacts__title {
   width: 221px;
-  margin-bottom: 35px;
-  padding: 0;
+  margin: 0 0 35px -20px;
+  padding: 0 14px 0 20px;
 
   @media (min-width: @tablet-width) {
     width: max-content;
-    margin-bottom: 76px;
+    margin: 0 0 76px -39px;
+    padding: 0 42px 0 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 311px 76px -39px;
   }
 }
 
 .field-contacts__label {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -47,4 +56,18 @@
 .field-contacts__input {
   flex-grow: 1;
   margin: 0;
+}
+
+.field-contacts__icon {
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+  }
 }
