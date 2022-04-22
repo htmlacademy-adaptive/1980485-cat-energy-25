@@ -6,6 +6,10 @@
   line-height: 18px;
   color: #444444;
   text-decoration: none;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .developer__link-logo {
@@ -18,5 +22,9 @@
 
   &:hover svg {
     color: @base-color;
+  }
+
+  &:active svg {
+    color: fade(@base-color, 30%);
   }
 }
