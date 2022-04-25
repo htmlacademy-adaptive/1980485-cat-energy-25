@@ -1,20 +1,26 @@
 .input {
   padding: 13px 15px 14px;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  border: 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus-within {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
 
-    & ~ .field-contacts__icon {
-      fill: @base-color;
+    & ~ .field-contacts__icon--email path,
+    & ~ .field-contacts__icon--email line {
+      stroke: @base-color;
+    }
+
+    & ~ .field-contacts__icon--phone {
+      color: @base-color;
     }
   }
 
