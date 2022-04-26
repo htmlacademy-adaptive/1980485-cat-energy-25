@@ -22,6 +22,11 @@
       background-repeat: no-repeat;
       background-position: 100% 100%;
       background-size: auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, #ffffff 50%, fade(@base-color, 85%) 50%), url("../img/main-promo-background-desktop@2x.jpg");
+        background-size: auto, 720px auto;
+      }
     }
 
     .navigation__item--current {

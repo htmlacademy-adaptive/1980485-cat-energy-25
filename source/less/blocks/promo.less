@@ -14,10 +14,14 @@
 .promo__container-text {
   padding: 27px 35px;
   min-height: 302px;
-  background: linear-gradient(fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/main-promo-background.jpg");
+  background-image: linear-gradient(fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/main-promo-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/main-promo-background@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 600px;
