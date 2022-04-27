@@ -37,6 +37,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: features;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -56,6 +57,7 @@
   align-items: center;
   min-height: 60px;
   padding-left: 80px;
+  counter-increment: features;
 
   @media (max-width: @mobile-width-only) {
     & br {
@@ -82,66 +84,53 @@
     }
   }
 
-  &:nth-child(2)::before {
+  &--powder::before {
     background-image: url("../img/powder.svg");
   }
 
-  &:nth-child(3)::before {
+  &--eat::before {
     background-image: url("../img/eat.svg");
   }
 
-  &:nth-child(4)::before {
+  &--time::before {
     background-image: url("../img/time.svg");
   }
 
   @media (min-width: @tablet-width) {
+    padding: 153px 0 57px;
+
+    &--leaf {
+      width: 230px;
+      padding-right: 29px;
+    }
+
+    &--powder {
+      width: 246px;
+      padding-right: 19px;
+    }
+
+    &--eat {
+      width: 247px;
+      padding-right: 38px;
+    }
+
+    &--time {
+      width: 249px;
+    }
+
     &::after {
-      content: "1";
+      content: counter(features);
       position: absolute;
       top: 0;
-      right: 7px;
+      right: 0;
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;
       z-index: -1;
     }
 
-    &:nth-child(2)::after {
-      content: "2";
-      right: 0;
-    }
-
-    &:nth-child(3)::after {
-      content: "3";
-      right: 0;
-    }
-
-    &:nth-child(4)::after {
-      content: "4";
-      right: 0;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 153px 0 57px;
-
-    &:nth-child(1) {
-      width: 230px;
-      padding-right: 29px;
-    }
-
-    &:nth-child(2) {
-      width: 246px;
-      padding-right: 19px;
-    }
-
-    &:nth-child(3) {
-      width: 247px;
-      padding-right: 38px;
-    }
-
-    &:nth-child(4) {
-      width: 249px;
+    &--leaf::after {
+      right: 7px;
     }
   }
 

@@ -1,5 +1,5 @@
 .catalog-promo {
-  padding: 35px 20px;
+  padding: 35px 0;
 
   @media (min-width: @tablet-width) {
     padding: 69px 0 76px;
@@ -20,12 +20,20 @@
   background-size: auto, cover, cover;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/catalog-promo-background-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 200px;
     padding: 71px 124px 69px 422px;
     background-image: url("../img/gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/catalog-promo-background-tablet.jpg");
     background-position: 77px center, center, center;
     text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/catalog-promo-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -33,6 +41,10 @@
     background-image: url("../img/gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/catalog-promo-background-desktop.jpg");
     background-position: center 56px, center, center;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/catalog-promo-background-desktop@2x.jpg");
+    }
   }
 }
 

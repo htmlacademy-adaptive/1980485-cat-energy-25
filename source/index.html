@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   </head>
   <body class="page__body">
     <header class="page__header page__header--index main-header">
@@ -12,7 +14,7 @@
         <div class="main-header__logo-block">
           <a class="logo">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
+              <source media="(min-width: 1300px)" srcset="img/header-logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
               <img class="logo__image" src="img/header-logo-mobile.svg" width="33" height="37" alt="Логотип сайта Cat Energy.">
             </picture>
@@ -47,9 +49,9 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/main-promo-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/main-promo-tablet.png">
-          <img class="promo__image" src="img/main-promo-mobile.png" width="280" height="270" alt="Корм Cat Energy Pro">
+          <source media="(min-width: 1300px)" srcset="img/main-promo-desktop.png 1x, img/main-promo-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/main-promo-tablet.png 1x, img/main-promo-tablet@2x.png 2x">
+          <img class="promo__image" src="img/main-promo-mobile.png" srcset="img/main-promo-mobile@2x.png 2x" width="280" height="270" alt="Корм Cat Energy Pro">
         </picture>
         <div class="promo__container-button">
           <button class="promo__button button button--primary">Подобрать программу</button>
@@ -78,16 +80,16 @@
         <div class="features__container">
           <h2 class="features__title title">Как это работает</h2>
           <ol class="features__list">
-            <li class="features__item">
+            <li class="features__item features__item--leaf">
               <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--powder">
               <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--eat">
               <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--time">
               <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
             </li>
           </ol>
@@ -118,13 +120,16 @@
             </div>
           </div>
           <div class="live-example__comparison-slider comparison-slider">
-            <img class="comparison-slider__image" src="img/cat-before.png" width="280" height="232" alt="Кот Борис до.">
-            <img class="comparison-slider__image" src="img/cat-after.png" width="280" height="232" alt="Кот Борис после.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-after.png 1x, img/cat-before-after@2x.png 2x">
+              <img class="comparison-slider__image" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="280" height="232" alt="Кот Борис после.">
+            </picture>
             <div class="comparison-slider__bar">
-              <label class="comparison-slider__label">Было</label>
-              <button class="comparison-slider__toggle-before" type="button"></button>
-              <button class="comparison-slider__toggle-after" type="button"></button>
-              <label class="comparison-slider__label">Стало</label>
+              <button class="visually-hidden comparison-slider__toggle-before" type="button" id="before"></button>
+              <button class="visually-hidden comparison-slider__toggle-after" type="button" id="after"></button>
+              <label class="comparison-slider__label" for="before">Было</label>
+              <div class="comparison-slider__range"></div>
+              <label class="comparison-slider__label" for="after">Стало</label>
             </div>
           </div>
         </div>
