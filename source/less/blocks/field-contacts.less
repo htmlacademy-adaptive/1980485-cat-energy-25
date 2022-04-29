@@ -56,6 +56,14 @@
 .field-contacts__input {
   flex-grow: 1;
   margin: 0;
+
+  &:focus-within ~ .field-contacts__icon--email {
+    stroke: @base-color;
+  }
+
+  &:focus-within ~ .field-contacts__icon--phone {
+    color: @base-color;
+  }
 }
 
 .field-contacts__icon {
@@ -64,6 +72,7 @@
   &--email {
     top: 16px;
     right: 15px;
+    stroke: #222222;
   }
 
   &--phone {

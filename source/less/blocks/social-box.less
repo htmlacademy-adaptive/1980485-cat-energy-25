@@ -1,16 +1,16 @@
 .social-box__link {
   display: block;
+}
 
-  & svg {
-    display: block;
-    color: #666666;
+.social-box__icon {
+  display: block;
+  fill: #666666;
+
+  &:hover {
+    fill: @base-color;
   }
 
-  &:hover svg {
-    color: @base-color;
-  }
-
-  &:active svg {
-    color: rgba(102, 102, 102, 0.3);
+  &:active {
+    fill: rgba(102, 102, 102, 0.3);
   }
 }
