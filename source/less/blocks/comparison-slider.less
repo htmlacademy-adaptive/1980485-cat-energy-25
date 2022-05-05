@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9px;
+  margin-top: 15px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+  }
 }
 
 .comparison-slider__toggle {
@@ -18,10 +22,15 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    margin: 0 10px;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+
+    &--after {
+      margin: 0 5px 0 10px;
+    }
 
     &:hover {
       border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -44,7 +53,7 @@
   position: relative;
   width: 86px;
   height: 14px;
-  margin: 0 13px;
+  margin: 0 18px;
   border: 0;
   outline: 1px solid #cdcdcd;
   border-radius: 6px;
@@ -64,6 +73,7 @@
   @media (min-width: @tablet-width) {
     width: 426px;
     height: 6px;
+    margin: 0 13px;
     background-color: rgba(220, 220, 220, 0.6);
     outline: 0;
 
