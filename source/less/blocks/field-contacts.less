@@ -22,7 +22,7 @@
   @media (min-width: @tablet-width) {
     width: max-content;
     margin: 0 0 76px -39px;
-    padding: 0 42px 0 39px;
+    padding: 0 41px 0 39px;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,10 +36,10 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     @media (min-width: @desktop-width) {
@@ -70,13 +70,26 @@
   position: absolute;
 
   &--email {
-    top: 16px;
+    top: 15px;
     right: 15px;
     stroke: #222222;
   }
 
   &--phone {
-    top: 13px;
+    top: 12px;
     right: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--email {
+      top: 17px;
+      right: 18px;
+      stroke: #222222;
+    }
+
+    &--phone {
+      top: 15px;
+      right: 18px;
+    }
   }
 }

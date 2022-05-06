@@ -36,7 +36,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 62px -40px;
+    margin: 0 0 57px -40px;
     padding: 0 40px 0 40px;
   }
 }
@@ -50,6 +50,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
     row-gap: 32px;
+    column-gap: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 80px;
   }
 }
 
@@ -62,12 +67,18 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .additionally__mark {
-  margin-right: 18px;
+  margin-right: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .additionally__label {
