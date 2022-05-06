@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 82px 40px 0;
+    padding: 133px 40px 0;
   }
 }
 
@@ -22,7 +22,8 @@
 }
 
 .advantages__item {
-  padding: 30px 20px 18px;
+  position: relative;
+  padding: 30px 20px 17px;
   background-color: #f2f2f2;
 
   @media (min-width: @desktop-width) {
@@ -41,35 +42,84 @@
     }
   }
 
-  &--cat-slim {
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 22px 21px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: @base-color;
+    border-radius: 50%;
 
     @media (min-width: @tablet-width) {
-      background-position: 88% 50%;
-      background-size: 200px 211px;
+      top: 92px;
+      left: auto;
+      right: 61px;
+      width: 200px;
+      height: 200px;
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 52px 41px;
-      background-size: 100px 106px;
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
     }
   }
 
-  &--cat-pro {
-    background-image: url("../img/cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: 13px 24px;
+  &--cat-slim::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 29px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/cat-slim.svg");
 
     @media (min-width: @tablet-width) {
-      background-position: 93% 52%;
-      background-size: 268px 200px;
+      top: 81px;
+      left: auto;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 33px 47px;
-      background-size: 134px 100px;
+      top: 41px;
+      left: 67px;
+      right: 92px;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
+  }
+
+  &--cat-pro::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/cat-pro.svg");
+
+    @media (min-width: @tablet-width) {
+      top: 135px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+      background-size: 268px 112px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 67px;
+      left: 33px;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
     }
   }
 
@@ -97,12 +147,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 76px 162px;
+    margin: 0 0 74px 162px;
   }
 }
 
 .advantages__description {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding-bottom: 21px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -117,7 +167,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding-bottom: 0;
   }
 }
@@ -151,7 +201,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 4px 60px 4px 0;
+    padding: 0 60px 0 0;
     font-size: 20px;
     line-height: 30px;
   }

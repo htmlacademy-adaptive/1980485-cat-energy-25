@@ -38,8 +38,12 @@
   @media (min-width: @tablet-width) {
     border: 0;
 
-    &:not(:last-child) {
+    &:nth-child(1) {
       margin-right: 34px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 36px;
     }
 
     &--current {
@@ -66,7 +70,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 15px 0 10px;
+    padding: 17px 0 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;

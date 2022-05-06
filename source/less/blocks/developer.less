@@ -14,17 +14,17 @@
 
 .developer__link-logo {
   display: block;
+}
 
-  & svg {
-    display: block;
-    color: #666666;
+.developer__icon-logo {
+  display: block;
+  fill: #666666;
+
+  &:hover {
+    fill: @base-color;
   }
 
-  &:hover svg {
-    color: @base-color;
-  }
-
-  &:active svg {
-    color: fade(@base-color, 30%);
+  &:active {
+    fill: fade(@base-color, 30%);
   }
 }
