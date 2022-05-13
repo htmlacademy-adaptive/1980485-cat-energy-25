@@ -103,4 +103,12 @@
   &:checked + .mark--checkbox::before {
     display: block;
   }
+
+  &:hover + .additionally__mark {
+    outline: 1px solid #bababa;
+  }
+
+  &:focus-within + .additionally__mark {
+    outline: 2px solid #444444;
+  }
 }
