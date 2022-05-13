@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -125,12 +127,16 @@
           <div class="live-example__comparison-slider comparison-slider">
             <div class="comparison-slider__wrapper comparison-slider__wrapper--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                 <img class="comparison-slider__image comparison-slider__image--before" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="280" height="232" alt="Кот Борис до.">
               </picture>
             </div>
             <div class="comparison-slider__wrapper comparison-slider__wrapper--after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                 <img class="comparison-slider__image comparison-slider__image--after" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="280" height="232" alt="Кот Борис после.">
               </picture>

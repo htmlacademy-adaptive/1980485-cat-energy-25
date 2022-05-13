@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы</title>
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -12,14 +14,14 @@
     <header class="page__header main-header" >
       <div class="main-header__container">
         <div class="main-header__logo-block">
-          <a class="logo">
+          <a class="logo" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/header-logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
               <img class="logo__image" src="img/header-logo-mobile.svg" width="33" height="37" alt="Логотип сайта Cat Energy.">
             </picture>
           </a>
-          <a class="logo-text">
+          <a class="logo-text" href="index.html">
             <img src="img/logo-text.svg" width="101" height="18" alt="Cat Energy.">
           </a>
         </div>
@@ -94,7 +96,7 @@
           </div>
           <fieldset class="form__fieldset form__field-contacts field-contacts">
             <div class="field-contacts__container">
-              <legend class="field-contacts__title title-line">Контактные данные (владельца кота)</legend>
+              <h2 class="field-contacts__title title-line">Контактные данные (владельца кота)</h2>
               <label class="field-contacts__label input-field">
                 <span class="input-field__parameter input-field__parameter--contacts">E-mail:*</span>
                 <input class="field-contacts__input input input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -113,13 +115,13 @@
           </fieldset>
           <fieldset class="form__fieldset form__comment comment">
             <div class="comment__container">
-              <legend class="comment__title title-line">Комментарий</legend>
+              <h2 class="comment__title title-line">Комментарий</h2>
               <textarea class="comment__textarea" name="comment" id="comment" cols="32" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__additionally additionally">
             <div class="additionally__container">
-              <legend class="additionally__title title-line">Дополнительно</legend>
+              <h2 class="additionally__title title-line">Дополнительно</h2>
               <ul class="additionally__list">
                 <li class="additionally__item">
                   <label class="additionally__label">
@@ -171,7 +173,7 @@
     </main>
     <footer class="page__main-footer main-footer">
       <div class="main-footer__container">
-        <a class="main-footer__logo">
+        <a class="main-footer__logo" href="index.html">
           <img src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy.">
         </a>
         <section class="social">
