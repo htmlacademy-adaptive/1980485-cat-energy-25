@@ -4,8 +4,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
     min-height: 400px;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -21,7 +28,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     width: 565px;
     padding: 57px 75px 62px 80px;
     background-color: #ffffff;
@@ -85,8 +92,16 @@
   display: block;
   height: 362px;
   width: 100%;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: @tablet-width) {
     height: 400px;
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
   }
 }
