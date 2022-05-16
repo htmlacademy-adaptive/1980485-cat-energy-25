@@ -36,10 +36,6 @@
   text-transform: uppercase;
   color: #222222;
 
-  &--disabled {
-    opacity: 0.3;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -79,5 +75,10 @@
 
   &:focus-within + .field-radio__mark {
     outline: 2px solid #444444;
+  }
+
+  &:disabled ~ .field-radio__text,
+  &:disabled ~ .field-radio__mark {
+    opacity: 0.3;
   }
 }

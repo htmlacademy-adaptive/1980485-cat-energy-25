@@ -15,17 +15,17 @@
       position: absolute;
       top: 0;
       right: 0;
+      left: 50%;
       display: block;
-      min-width: 100%;
+      min-width: 50%;
       min-height: 693px;
-      background-image: linear-gradient(to right, #ffffff 50%, fade(@base-color, 85%) 50%), url("../img/main-promo-background-desktop.jpg");
+      background-image: url("../img/main-promo-background-desktop.jpg");
       background-repeat: no-repeat;
-      background-position: 100% 100%;
-      background-size: auto;
+      background-position: 0;
+      background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, #ffffff 50%, fade(@base-color, 85%) 50%), url("../img/main-promo-background-desktop@2x.jpg");
-        background-size: auto, 720px auto;
+        background-image: url("../img/main-promo-background-desktop@2x.jpg");
       }
     }
   }
